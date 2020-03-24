@@ -61,7 +61,7 @@ function Schedule() {
      * is schedule is all day schedule?
      * @type {boolean}
      */
-    this.isAllDay = false;
+    this.isAllDay = true;
 
     /**
      * schedule start

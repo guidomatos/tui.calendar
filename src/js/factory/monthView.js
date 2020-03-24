@@ -99,9 +99,9 @@ function createMonthView(baseController, layoutContainer, dragHandler, options) 
 
             schedules.each(function(scheduleViewModel) {
                 if (scheduleViewModel) {
-                    /**
-                     * @event More#afterRenderSchedule
-                     */
+                    /*
+                    @event More#afterRenderSchedule
+                    */
                     monthView.fire('afterRenderSchedule', {schedule: scheduleViewModel.model});
                 }
             });

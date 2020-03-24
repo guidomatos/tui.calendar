@@ -114,7 +114,7 @@ body {
 .lnb-new-schedule-btn:hover {
   height: 100%;
   font-size: 14px;
-  background-color: #e55b15;
+  background-color: #75bd17;
   color: #ffffff;
   border: 0;
   border-radius: 25px;
@@ -125,7 +125,7 @@ body {
 .lnb-new-schedule-btn:active {
   height: 100%;
   font-size: 14px;
-  background-color: #d95614;
+  background-color: #75bd17;
   color: #ffffff;
   border: 0;
   border-radius: 25px;

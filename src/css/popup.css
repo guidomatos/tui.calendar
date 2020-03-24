@@ -1,0 +1,466 @@
+.css-prefixpopup {
+  position: absolute;
+  font-weight: 2.5;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+  clear: both;
+}
+.css-prefixpopup-container {
+  min-width: 474px;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
+  border: solid 1px #d5d5d5;
+  padding: 17px;
+  border-radius: 2px;
+}
+.css-prefixpopup-section {
+  font-size: 0;
+  min-height: 40px;
+}
+.css-prefixsection-calendar {
+  width: 176px;
+}
+.css-prefixsection-calendar.css-prefixhide {
+  height: 21px;
+  visibility: hidden;
+}
+.css-prefixsection-title {
+  width: calc(100% - 36px);
+  padding-right: 4px;
+}
+.css-prefixsection-title input {
+  width: 365px;
+}
+.css-prefixbutton.css-prefixsection-private {
+  height: 32px;
+  padding: 8px;
+  font-size: 0;
+  margin-left: 4px;
+}
+.css-prefixsection-private.css-prefixpublic .css-prefixic-private {
+  background: url("image/ic-unlock.png") no-repeat;
+}
+.css-prefixsection-start-date,
+.css-prefixsection-end-date {
+  width: 176px;
+}
+.css-prefixsection-start-date input,
+.css-prefixsection-end-date input {
+  width: 139px;
+}
+.css-prefixsection-start-date:hover .css-prefixpopup-section-item,
+.css-prefixsection-end-date:hover .css-prefixpopup-section-item,
+.css-prefixsection-start-date:focus .css-prefixpopup-section-item,
+.css-prefixsection-end-date:focus .css-prefixpopup-section-item,
+.css-prefixsection-start-date:hover .tui-datepicker,
+.css-prefixsection-end-date:hover .tui-datepicker,
+.css-prefixsection-start-date:focus .tui-datepicker,
+.css-prefixsection-end-date:focus .tui-datepicker {
+  border-color: #bbb;
+}
+.css-prefixpopup-section-item:focus {
+  border-color: #bbb;
+}
+.css-prefixsection-date-dash {
+  font-size: 12px;
+  color: #d5d5d5;
+  height: 32px;
+  padding: 0 4px;
+  vertical-align: middle;
+}
+.css-prefixpopup-section-item.css-prefixsection-allday {
+  border: none;
+  padding: 0 0 0 8px;
+  cursor: pointer;
+}
+.css-prefixpopup-section-item.css-prefixsection-location {
+  display: block;
+}
+.css-prefixpopup-section-item.css-prefixsection-location input {
+  width: 400px;
+}
+.css-prefixsection-allday .css-prefixicon.css-prefixic-checkbox {
+  margin: 0;
+}
+.css-prefixpopup-section-item.css-prefixsection-allday .css-prefixcontent {
+  padding-left: 4px;
+}
+.css-prefixsection-state {
+  width: 109px;
+}
+.css-prefixsection-state .css-prefixcontent {
+  width: 58px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.css-prefixpopup-section-item {
+  height: 32px;
+  padding: 0 9px 0 12px;
+  border: 1px solid #d5d5d5;
+  display: inline-block;
+  font-size: 0;
+  border-radius: 2px;
+}
+.css-prefixpopup-section-item:hover {
+  border-color: #bbb;
+}
+.css-prefixpopup-section-item:focus {
+  border-color: #bbb;
+}
+.css-prefixpopup-section-item .css-prefixicon {
+  position: relative;
+}
+.css-prefixicon.css-prefixic-title {
+  top: 2px;
+}
+.css-prefixpopup-section-item .css-prefixcontent {
+  text-align: left;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 8px;
+}
+.css-prefixsection-calendar .css-prefixdropdown-button .css-prefixcontent {
+  width: 125px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  top: -1px;
+}
+.css-prefixpopup-section-item input {
+  border: none;
+  height: 30px;
+  outline: none;
+  display: inline-block;
+}
+.css-prefixpopup-section-item input::placeholder {
+  color: #bbb;
+  font-weight: 300;
+}
+.css-prefixdropdown {
+  position: relative;
+}
+.css-prefixdropdown:hover .css-prefixdropdown-button {
+  border: 1px solid #bbb;
+}
+.css-prefixdropdown-button.css-prefixpopup-section-item {
+  height: 32px;
+  font-size: 0;
+  top: -1px;
+}
+.css-prefixdropdown-arrow {
+  background: url("image/ic-arrow-solid-bottom.png") no-repeat;
+}
+.dropdown.open .css-prefixdropdown-arrow,
+.css-prefixopen .css-prefixdropdown-arrow {
+  background: url("image/ic-arrow-solid-top.png") no-repeat;
+}
+.css-prefixdropdown-menu {
+  position: absolute;
+  top: 31px;
+  padding: 4px 0;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+  width: 100%;
+}
+.css-prefixdropdown:hover .css-prefixdropdown-menu {
+  border: 1px solid #bbb;
+  border-top: none;
+}
+.css-prefixdropdown-menu {
+  display: none;
+}
+.css-prefixopen .css-prefixdropdown-menu {
+  display: block;
+}
+.css-prefixdropdown-menu-item {
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.css-prefixsection-calendar .css-prefixdropdown-menu-item {
+  width: 100%;
+}
+.css-prefixsection-state .css-prefixdropdown-menu-item {
+  width: 100%;
+}
+.css-prefixdropdown-menu-item:hover {
+  background-color: rgba(81,92,230,0.05);
+}
+.css-prefixdropdown-menu-item .css-prefixcontent {
+  line-height: 30px;
+}
+.css-prefixbutton.css-prefixpopup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 2px;
+  border: none;
+}
+.css-prefixsection-button-save {
+  height: 36px;
+}
+.css-prefixpopup-save {
+  float: right;
+}
+.css-prefixpopup-arrow-border,
+.css-prefixpopup-arrow-fill {
+  position: absolute;
+}
+.css-prefixarrow-top .css-prefixpopup-arrow-border {
+  border-top: none;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #d5d5d5;
+  border-left: 8px solid transparent;
+  left: calc(50% - 8px);
+  top: -7px;
+}
+.css-prefixarrow-right .css-prefixpopup-arrow-border {
+  border-top: 8px solid transparent;
+  border-right: none;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #d5d5d5;
+  top: calc(50% - 8px);
+  right: -7px;
+}
+.css-prefixarrow-bottom .css-prefixpopup-arrow-border {
+  border-top: 8px solid #d5d5d5;
+  border-right: 8px solid transparent;
+  border-bottom: none;
+  border-left: 8px solid transparent;
+  left: calc(50% - 8px);
+  bottom: -7px;
+}
+.css-prefixarrow-left .css-prefixpopup-arrow-border {
+  border-top: 8px solid transparent;
+  border-right: 8px solid #d5d5d5;
+  border-bottom: 8px solid transparent;
+  border-left: none;
+  top: calc(50% - 8px);
+  left: -7px;
+}
+.css-prefixarrow-top .css-prefixpopup-arrow-fill {
+  border-top: none;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  border-left: 7px solid transparent;
+  left: -7px;
+  top: 1px;
+}
+.css-prefixarrow-right .css-prefixpopup-arrow-fill {
+  border-top: 7px solid transparent;
+  border-right: none;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #fff;
+  top: -7px;
+  right: 1px;
+}
+.css-prefixarrow-bottom .css-prefixpopup-arrow-fill {
+  border-top: 7px solid #fff;
+  border-right: 7px solid transparent;
+  border-bottom: none;
+  border-left: 7px solid transparent;
+  left: -7px;
+  bottom: 1px;
+}
+.css-prefixarrow-left .css-prefixpopup-arrow-fill {
+  border-top: 7px solid transparent;
+  border-right: 7px solid #fff;
+  border-bottom: 7px solid transparent;
+  border-left: none;
+  top: -7px;
+  left: 1px;
+}
+.css-prefixbutton {
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: #333;
+}
+.css-prefixbutton:hover {
+  border-color: #bbb;
+  color: #333;
+}
+.css-prefixbutton:active {
+  background: #f9f9f9;
+  color: #333;
+}
+.css-prefixbutton .round {
+  border-radius: 25px;
+}
+.css-prefixconfirm {
+  width: 96px;
+  height: 36px;
+  border-radius: 40px;
+  background-color: #75bd17;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+}
+.css-prefixconfirm:hover {
+  background-color: #e55b15;
+  color: #fff;
+}
+.css-prefixconfirm:active {
+  background-color: #75bd17;
+  color: #fff;
+}
+/* icon styles */
+.css-prefixicon.css-prefixright {
+  float: right;
+  top: 1px;
+}
+.css-prefixicon .css-prefixnone {
+  display: none;
+}
+.css-prefixicon.css-prefixcalendar-dot {
+  border-radius: 8px;
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+}
+input[type='checkbox'].css-prefixcheckbox-square {
+  display: none;
+}
+input[type='checkbox'].css-prefixcheckbox-square + span {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 14px;
+  margin-right: 8px;
+  width: 14px;
+  height: 14px;
+  background: url("image/ic-checkbox-normal.png") no-repeat;
+  vertical-align: middle;
+}
+input[type='checkbox'].css-prefixcheckbox-square:checked + span {
+  background: url("image/ic-checkbox-checked.png") no-repeat;
+}
+input[type='checkbox'].css-prefixcheckbox-round {
+  display: none;
+}
+input[type='checkbox'].css-prefixcheckbox-round + span {
+  display: inline-block;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 8px;
+  border: solid 2px;
+  background: transparent;
+}
+.css-prefixpopup-top-line {
+  position: absolute;
+  border-radius: 2px 2px 0 0;
+  width: 100%;
+  height: 4px;
+  border: none;
+  top: 0;
+}
+.css-prefixpopup-detail .css-prefixpopup-container {
+  width: 301px;
+  min-width: 301px;
+  padding-bottom: 0;
+}
+.css-prefixpopup-detail .css-prefixicon {
+  width: 12px;
+  height: 12px;
+  background-size: 12px;
+  position: relative;
+}
+.css-prefixpopup-detail .css-prefixicon {
+  margin-right: 8px;
+}
+.css-prefixpopup-detail .css-prefixicon.css-prefixic-location-b {
+  top: -2px;
+}
+.css-prefixpopup-detail .css-prefixicon.css-prefixic-user-b {
+  top: -2px;
+}
+.css-prefixpopup-detail .css-prefixicon.css-prefixic-state-b {
+  top: -1px;
+}
+.css-prefixpopup-detail .css-prefixicon.css-prefixcalendar-dot {
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  top: -1px;
+}
+.css-prefixpopup-detail .css-prefixcontent {
+  line-height: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 2;
+}
+.css-prefixpopup-detail .css-prefixsection-header {
+  margin-bottom: 6px;
+}
+.css-prefixpopup-detail .css-prefixpopup-detail-item-separate {
+  margin-top: 4px;
+}
+.css-prefixpopup-detail .css-prefixpopup-detail-item-indent {
+  text-indent: -20px;
+  padding-left: 20px;
+}
+.css-prefixpopup-detail .css-prefixschedule-title {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  word-break: break-all;
+}
+.css-prefixpopup-detail .css-prefixschedule-private {
+  display: none;
+  width: 16px;
+  height: 16px;
+  background: url("image/ic-lock.png") no-repeat 16px;
+}
+.css-prefixpopup-detail .css-prefixschedule-private .css-prefixic-private {
+  display: block;
+}
+.css-prefixpopup-detail .css-prefixsection-detail {
+  margin-bottom: 16px;
+}
+.css-prefixpopup-detail .css-prefixsection-button {
+  border-top: 1px solid #e5e5e5;
+  font-size: 0;
+}
+.css-prefixsection-button .css-prefixicon {
+  margin-right: 4px;
+  top: -3px;
+}
+.css-prefixsection-button .css-prefixcontent {
+  position: relative;
+  top: 2px;
+}
+.css-prefixpopup-edit,
+.css-prefixpopup-delete {
+  display: inline-block;
+  padding: 7px 9px 11px 9px;
+  width: calc(50% - 1px);
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.css-prefixpopup-vertical-line {
+  background: #e5e5e5;
+  width: 1px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -7px;
+}
+/* override tui-date-picker */
+.tui-datepicker {
+  left: -12px;
+  z-index: 1;
+  border-color: #d5d5d5;
+}

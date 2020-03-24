@@ -317,7 +317,7 @@ var mmin = Math.min;
  *             return 'Body : ' + schedule.body;
  *         },
  *         popupEdit: function() {
- *             return 'Edit';
+ *             return 'Editar';
  *         },
  *         popupDelete: function() {
  *             return 'Delete';
@@ -397,7 +397,6 @@ var mmin = Math.min;
  * @property {string} bgColor - The background color schedule is displayed
  * @property {string} borderColor - The color of left border or bullet point when schedule is displayed
  * @property {string} dragBgColor - The background color when schedule dragging
-
 
 /**
  * @typedef {object} Options - Calendar option object

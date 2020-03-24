@@ -360,7 +360,6 @@ var helpers = {
     },
 
     'timegridDisplayPrimayTime-tmpl': function(time) {
-        /* TODO: 삭제 필요 (will be deprecated) */
         return Handlebars.helpers['timegridDisplayPrimaryTime-tmpl'](time);
     },
 
@@ -450,10 +449,10 @@ var helpers = {
         return schedule.body;
     },
     'popupEdit-tmpl': function() {
-        return 'Edit';
+        return 'Editar';
     },
     'popupDelete-tmpl': function() {
-        return 'Delete';
+        return 'Eliminar';
     }
 };
 

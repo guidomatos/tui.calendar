@@ -68,7 +68,7 @@
     "preprocess-loader": "^0.3.0",
     "safe-umd-webpack-plugin": "^4.0.0",
     "style-loader": "^0.21.0",
-    "stylus": "^0.54.5",
+    "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "terser-webpack-plugin": "^2.3.5",
     "tslint": "^5.12.0",
