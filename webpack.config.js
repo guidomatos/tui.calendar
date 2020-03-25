@@ -10,6 +10,7 @@ var OptimizaeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var SafeUmdPlugin = require('safe-umd-webpack-plugin');
 var isProduction = process.env.NODE_ENV === 'production';
 var FILENAME = pkg.name + (isProduction ? '.min' : '');
+// FILENAME = 'tui-calendar'
 var BANNER = [
     'TOAST UI Calendar',
     '@version ' + pkg.version + ' | ' + new Date().toDateString(),

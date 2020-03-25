@@ -391,47 +391,47 @@ var helpers = {
     },
 
     'popupIsAllDay-tmpl': function() {
-        return 'All day';
+        return 'Todo el día';
     },
 
     'popupStateFree-tmpl': function() {
-        return 'Free';
+        return 'Libre';
     },
 
     'popupStateBusy-tmpl': function() {
-        return 'Busy';
+        return 'Ocupado';
     },
 
     'titlePlaceholder-tmpl': function() {
-        return 'Subject';
+        return 'Sujeto';
     },
 
     'locationPlaceholder-tmpl': function() {
-        return 'Location';
+        return 'Ubicación';
     },
 
     'startDatePlaceholder-tmpl': function() {
-        return 'Start date';
+        return 'Fecha inicio';
     },
 
     'endDatePlaceholder-tmpl': function() {
-        return 'End date';
+        return 'Fecha fin';
     },
     'popupSave-tmpl': function() {
-        return 'Save';
+        return 'Grabar';
     },
     'popupUpdate-tmpl': function() {
-        return 'Update';
+        return 'Actualizar';
     },
     'popupDetailDate-tmpl': function(isAllDay, start, end) {
         var isSameDate = datetime.isSameDate(start, end);
-        var endFormat = (isSameDate ? '' : 'YYYY.MM.DD ') + 'hh:mm tt';
+        var endFormat = (isSameDate ? '' : 'DD/MM/YYYY ') + 'hh:mm tt';
 
         if (isAllDay) {
-            return datetime.format(start, 'YYYY.MM.DD') + (isSameDate ? '' : ' - ' + datetime.format(end, 'YYYY.MM.DD'));
+            return datetime.format(start, 'DD/MM/YYYY') + (isSameDate ? '' : ' - ' + datetime.format(end, 'DD/MM/YYYY'));
         }
 
-        return (datetime.format(start, 'YYYY.MM.DD hh:mm tt') + ' - ' + datetime.format(end, endFormat));
+        return (datetime.format(start, 'DD/MM/YYYY hh:mm tt') + ' - ' + datetime.format(end, endFormat));
     },
     'popupDetailLocation-tmpl': function(schedule) {
         return schedule.location;

@@ -83,11 +83,13 @@ body {
 }
 
 #right {
+  /*
   position: absolute;
   left: 200px;
   top: 49px;
   right: 0;
   bottom: 0;
+  */
 }
 
 #lnb label {
@@ -102,34 +104,34 @@ body {
 
 .lnb-new-schedule-btn {
   height: 100%;
-  font-size: 14px;
+  /*font-size: 14px;*/
   background-color: #75bd17;
   color: #ffffff;
   border: 0;
   border-radius: 25px;
-  padding: 10px 20px;
+  /*padding: 10px 20px;*/
   font-weight: bold;
 }
 
 .lnb-new-schedule-btn:hover {
   height: 100%;
-  font-size: 14px;
-  background-color: #75bd17;
+  /*font-size: 14px;*/
+  background-color: #41bd17;
   color: #ffffff;
   border: 0;
   border-radius: 25px;
-  padding: 10px 20px;
+  /*padding: 10px 20px;*/
   font-weight: bold;
 }
 
 .lnb-new-schedule-btn:active {
   height: 100%;
-  font-size: 14px;
+  /*font-size: 14px;*/
   background-color: #75bd17;
   color: #ffffff;
   border: 0;
   border-radius: 25px;
-  padding: 10px 20px;
+  /*padding: 10px 20px;*/
   font-weight: bold;
 }
 
@@ -188,8 +190,16 @@ body {
 
 #renderRange {
   padding-left: 12px;
-  font-size: 19px;
-  vertical-align: middle;
+  width: 96px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #75bd17;
+
 }
 
 .dropdown-menu-title .calendar-icon {

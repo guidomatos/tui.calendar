@@ -112,7 +112,8 @@ MonthCreation.prototype._createSchedule = function(eventData) {
      * @property {string} triggerEventName - event name
      */
     this.fire('beforeCreateSchedule', {
-        isAllDay: eventData.isAllDay,
+        // isAllDay: eventData.isAllDay,
+        isAllDay: true,
         start: eventData.start,
         end: eventData.end,
         guide: this.guide.guide,

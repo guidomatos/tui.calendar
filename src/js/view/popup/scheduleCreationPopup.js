@@ -578,7 +578,8 @@ ScheduleCreationPopup.prototype._createDatepicker = function(start, end, isAllDa
             input: '#' + cssPrefix + 'schedule-end-date',
             container: '#' + cssPrefix + 'endpicker-container'
         },
-        format: isAllDay ? 'yyyy-MM-dd' : 'yyyy-MM-dd HH:mm',
+        format: isAllDay ? 'dd/MM/yyyy' : 'dd/MM/yyyy HH:mm',
+        // format: 'dd/MM/yyyy',
         timepicker: isAllDay ? null : {
             showMeridiem: false,
             usageStatistics: this._usageStatistics

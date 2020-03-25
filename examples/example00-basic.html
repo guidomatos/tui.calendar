@@ -1,48 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Calendario</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/tui-time-picker/dist/tui-time-picker.css">
     <link rel="stylesheet" type="text/css" href="../lib/tui-date-picker/dist/tui-date-picker.css">
-    <link rel="stylesheet" type="text/css" href="../lib/tui-calendar/dist/tui-calendar.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../lib/tui-calendar/dist/tui-calendar.css"> -->
+    <link rel="stylesheet" type="text/css" href="../dist/tui-calendar.css">
     <link rel="stylesheet" type="text/css" href="./css/default.css">
     <link rel="stylesheet" type="text/css" href="./css/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
-    <div id="top">
-        <!-- <a href="https://github.com/nhn/tui.calendar">
-            <img src="./images/img-bi.png" srcset="./images/img-bi@2x.png 2x,./images/img-bi@3x.png 3x">
-        </a> -->
-    </div>
-    <div id="lnb">
-        <div class="lnb-new-schedule">
-            <button id="btn-new-schedule" type="button" class="btn btn-default btn-block lnb-new-schedule-btn" data-toggle="modal">
-                Agregar</button>
-        </div>
-        <div id="lnb-calendars" class="lnb-calendars">
-            <div>
-                <div class="lnb-calendars-item">
-                    <label>
-                        <input class="tui-full-calendar-checkbox-square" type="checkbox" value="all" checked>
-                        <span></span>
-                        <strong>Ver todo</strong>
-                    </label>
-                </div>
-            </div>
-            <div id="calendarList" class="lnb-calendars-d1">
-            </div>
-        </div>
-        <div class="lnb-footer">
-            © Tottus
-        </div>
-    </div>
     <div id="right">
         <div id="menu">
-            <span>
-                Registrar actividad
-            </span>
             <span class="dropdown">
                 <button id="dropdownMenu-calendarType" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="true">
@@ -51,16 +23,6 @@
                     <i class="calendar-icon tui-full-calendar-dropdown-arrow"></i>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu-calendarType">
-                    <li role="presentation" style="display: none;">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-daily">
-                            <i class="calendar-icon ic_view_day"></i>Daily
-                        </a>
-                    </li>
-                    <li role="presentation" style="display: none;">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weekly">
-                            <i class="calendar-icon ic_view_week"></i>Weekly
-                        </a>
-                    </li>
                     <li role="presentation">
                         <a class="dropdown-menu-title" role="menuitem" data-action="toggle-monthly">
                             <i class="calendar-icon ic_view_month"></i>Mensual
@@ -69,16 +31,6 @@
                     <li role="presentation">
                         <a class="dropdown-menu-title" role="menuitem" data-action="toggle-schedule">
                             <i class="calendar-icon ic_view_week"></i>Agenda
-                        </a>
-                    </li>
-                    <li role="presentation" style="display: none;">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks2">
-                            <i class="calendar-icon ic_view_week"></i>2 weeks
-                        </a>
-                    </li>
-                    <li role="presentation" style="display: none;">
-                        <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks3">
-                            <i class="calendar-icon ic_view_week"></i>3 weeks
                         </a>
                     </li>
                     <li role="presentation" class="dropdown-divider"></li>
@@ -102,16 +54,20 @@
                     </li>
                 </ul>
             </span>
-            <span id="menu-navi">
-                <button type="button" class="btn btn-default btn-sm move-day" data-action="move-prev">
-                    <i class="calendar-icon ic-arrow-line-left" data-action="move-prev"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-sm move-today" data-action="move-today">Hoy</button>
-                <button type="button" class="btn btn-default btn-sm move-day" data-action="move-next">
-                    <i class="calendar-icon ic-arrow-line-right" data-action="move-next"></i>
-                </button>
+            <span>Registrar actividad</span>
+            <span id="renderRange"></span>
+            <span>
+                <span id="menu-navi">
+                    <button type="button" class="btn btn-default btn-sm" data-action="move-prev">Anterior</button>
+                    <button type="button" class="btn btn-default btn-sm move-today" data-action="move-today">Hoy</button>
+                    <button type="button" class="btn btn-default btn-sm" data-action="move-next">Siguiente</button>
+                </span>
+                <button id="btn-new-schedule" type="button" class="btn btn-default btn-sm lnb-new-schedule-btn" data-toggle="modal">
+                    Agregar
+                    <i class="fa fa-plus-circle"></i>
+                </button>                
             </span>
-            <span id="renderRange" class="render-range"></span>
+
         </div>
         <div id="calendar"></div>
     </div>
@@ -125,7 +81,8 @@
     <script src="../lib/tui-date-picker/dist/tui-date-picker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.13/chance.min.js"></script>
-    <script src="../lib/tui-calendar/dist/tui-calendar.js"></script>
+    <!-- <script src="../lib/tui-calendar/dist/tui-calendar.js"></script> -->
+    <script src="../dist/tui-calendar.js"></script>
     <script src="../lib/calendars.js"></script>
     <script src="../lib/app.js"></script>
 </body>
